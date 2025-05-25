@@ -1,0 +1,258 @@
+# StockTracker Uygulaması Modüler Yapı Düzenlemeleri
+
+Bu dosya, StockTracker uygulamasındaki hidden_buy_selected ve hidden_sell_selected fonksiyonlarını modüler yapıyı kullanacak şekilde güncellemek için gerekli değişiklikleri içerir.
+
+## 1. Opt50 Mal Topla İçin Değişiklikler
+
+İlk olarak, "def opt50_mal_topla(self):" fonksiyonunun içindeki:
+
+```python
+# Hidden Buy butonu - Seçili hisseler için
+def hidden_buy_selected():
+    selected_items = opportunity_tree.selection()
+    if not selected_items:
+        messagebox.showinfo("Uyarı", "Lütfen en az bir hisse seçin.")
+        return
+    
+    print(f"Seçilen hisse sayısı: {len(selected_items)}")
+    
+    # Seçili hisselerin verilerini topla
+    orders_to_place = []
+    
+    for item_id in selected_items:
+        item_values = opportunity_tree.item(item_id, "values")
+        
+        if not item_values or len(item_values) < 6:
+            print(f"Hata: Bu öğede gerekli veriler eksik: {item_values}")
+            continue
+        
+        try:
+            symbol = item_values[0]
+            bid = float(item_values[2]) 
+            ask = float(item_values[3])
+            spread = ask - bid
+            
+            # Hedef fiyat: bid + spread*0.15
+            target_price = bid + (spread * 0.15)
+            
+            # Miktar: Default 200 lot
+            quantity = 200
+            
+            orders_to_place.append({
+                'symbol': symbol,
+                'quantity': quantity,
+                'price': target_price
+            })
+            
+            print(f"Emir listeye eklendi: {symbol}, {quantity} adet @ {target_price:.2f}")
+        except Exception as e:
+            print(f"Hata: {e}, Değerler: {item_values}")
+    
+    if not orders_to_place:
+        messagebox.showinfo("Uyarı", "Geçerli emirler oluşturulamadı. Veriler kontrol edin.")
+        return
+    
+    # Emir detaylarını hazırla
+    order_details = "\n".join([
+        f"{order['symbol']}: {order['quantity']} adet @ {order['price']:.2f}$"
+        for order in orders_to_place
+    ])
+    
+    # Onay kutusu göster
+    confirm = messagebox.askyesno(
+        "Hidden Buy Emir Onayı",
+        f"Aşağıdaki {len(orders_to_place)} hidden buy emri gönderilecek:\n\n{order_details}\n\n"
+        f"Onaylıyor musunuz?"
+    )
+    
+    if confirm:
+        print("Emirler onaylandı!")
+        try:
+            # Gerçek emirleri gönder
+            sent_orders = 0
+            for order in orders_to_place:
+                symbol = order['symbol']
+                price = float(order['price'])
+                quantity = int(order['quantity'])
+                
+                # Kontrat oluştur
+                contract = Stock(symbol, 'SMART', 'USD')
+                
+                # Emir oluştur ve gönder
+                limit_order = LimitOrder('BUY', quantity, round(price, 2))
+                limit_order.hidden = True
+                self.ib.placeOrder(contract, limit_order)
+                print(f"Emir gönderildi: {symbol} BUY @ {price:.2f} x {quantity}")
+                sent_orders += 1
+            
+            messagebox.showinfo("Başarılı", f"{sent_orders} adet hidden buy emri başarıyla gönderildi!")
+        except Exception as e:
+            print(f"Emir gönderirken hata: {e}")
+            import traceback
+            traceback.print_exc()
+            messagebox.showerror("Hata", f"Emirler gönderilirken hata oluştu: {str(e)}")
+    else:
+        print("Emirler iptal edildi!")
+```
+
+Yerine şunu yazın:
+
+```python
+# Hidden Buy butonu - Seçili hisseler için (Opt50)
+def hidden_buy_opt50():
+    # Modüler yapıyı kullanarak hidden buy emri ver
+    place_hidden_orders(
+        self.ib,                # IB bağlantısı
+        opportunity_tree,       # Treeview
+        action="BUY",
+        parent_window=opportunity_window,
+        lot_size=200,
+        spread_multiplier=0.15
+    )
+```
+
+Ve buton tanımını:
+
+```python
+# Hidden Buy butonu
+hidden_buy_btn = ttk.Button(
+    button_frame,
+    text="Seçili Hisseler İçin Hidden Buy",
+    command=hidden_buy_selected
+)
+```
+
+Şu şekilde değiştirin:
+
+```python
+# Hidden Buy butonu
+hidden_buy_btn = ttk.Button(
+    button_frame,
+    text="Seçili Hisseler İçin Hidden Buy",
+    command=hidden_buy_opt50
+)
+```
+
+## 2. Cashpark35 Mal Topla İçin Değişiklikler
+
+"def cashpark35_mal_topla(self):" fonksiyonunun içindeki hidden_buy_selected fonksiyonunu aşağıdaki gibi değiştirin:
+
+```python
+# Hidden Buy butonu - Seçili hisseler için (Cashpark35)
+def hidden_buy_cash35():
+    # Modüler yapıyı kullanarak hidden buy emri ver
+    place_hidden_orders(
+        self.ib,                # IB bağlantısı
+        opportunity_tree,       # Treeview
+        action="BUY",
+        parent_window=opportunity_window,
+        lot_size=200,
+        spread_multiplier=0.15
+    )
+```
+
+Ve buton tanımını:
+
+```python
+# Hidden Buy butonu
+hidden_buy_btn = ttk.Button(
+    button_frame,
+    text="Seçili Hisseler İçin Hidden Buy",
+    command=hidden_buy_selected
+)
+```
+
+Şu şekilde değiştirin:
+
+```python
+# Hidden Buy butonu
+hidden_buy_btn = ttk.Button(
+    button_frame,
+    text="Seçili Hisseler İçin Hidden Buy",
+    command=hidden_buy_cash35
+)
+```
+
+## 3. Take Profit Shorts İçin Değişiklikler
+
+"def take_profit_from_shorts(self):" fonksiyonunun içindeki hidden_buy_selected fonksiyonunu aşağıdaki gibi değiştirin:
+
+```python
+# Hidden Buy butonu - Seçili hisseler için (Take Profit Shorts)
+def hidden_buy_shorts():
+    # Modüler yapıyı kullanarak hidden buy emri ver
+    place_hidden_orders(
+        self.ib,                # IB bağlantısı
+        profit_tree,            # Treeview
+        action="BUY",
+        parent_window=profit_window,
+        lot_size=200,
+        spread_multiplier=0.15
+    )
+```
+
+Ve buton tanımını güncelleme (örnek olarak, sizin kodunuzda farklı olabilir):
+
+```python
+# Create a bigger, more noticeable button
+hidden_buy_btn = tk.Button(
+    bottom_button_frame,
+    text="HIDDEN BUY EMRİ GÖNDER",
+    command=hidden_buy_selected,
+    # ... diğer stil özellikleri
+)
+```
+
+Şu şekilde değiştirin:
+
+```python
+# Create a bigger, more noticeable button
+hidden_buy_btn = tk.Button(
+    bottom_button_frame,
+    text="HIDDEN BUY EMRİ GÖNDER",
+    command=hidden_buy_shorts,
+    # ... diğer stil özellikleri
+)
+```
+
+## 4. Take Profit Longs İçin Değişiklikler
+
+"def take_profit_from_longs(self):" fonksiyonunda zaten modüler yapı kullanılıyor görünüyor:
+
+```python
+def hidden_sell_selected():
+    # place_hidden_orders modül fonksiyonunu kullan
+    place_hidden_orders(
+        self.ib,           # IB bağlantısı
+        profit_tree,       # Treeview
+        action="SELL",
+        parent_window=profit_window,
+        lot_size=200,
+        spread_multiplier=0.15
+    )
+```
+
+İsterseniz bu fonksiyonun adını da "hidden_sell_longs" olarak değiştirebilirsiniz:
+
+```python
+def hidden_sell_longs():
+    # place_hidden_orders modül fonksiyonunu kullan
+    place_hidden_orders(
+        self.ib,           # IB bağlantısı
+        profit_tree,       # Treeview
+        action="SELL",
+        parent_window=profit_window,
+        lot_size=200,
+        spread_multiplier=0.15
+    )
+```
+
+Ve ilgili buton tanımını da güncelleyin:
+
+```python
+hidden_sell_btn = ttk.Button(
+    button_frame,
+    text="Hidden Sell Emri",
+    command=hidden_sell_longs
+)
+``` 

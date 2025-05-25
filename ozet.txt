@@ -1,0 +1,37 @@
+# Yapılan Değişiklikler Özeti
+
+Take profit shorts, Opt50 mal topla ve Cashpark35 mal topla ekranlarında manuel tıklama ile hisse senedi seçme özelliği eklenmiştir.
+
+## Değişiklikler
+
+1. Her pencere için TreeView bileşenleri şu şekilde güncellenmiştir:
+   - "Select" (Seç) adında ilk sütun eklenmiştir
+   - Treeview modu "selectmode=none" olarak ayarlanmıştır (manuel seçim için)
+   - Satırların başında tıklanabilir "□" işareti eklenmiştir
+   - Tıklama işlemi ile "□" işareti "✓" olarak değişmektedir
+
+2. Aşağıdaki fonksiyonlar eklenmiştir:
+   - Treeview'e tıklama işlevi eklenerek, ilk sütuna tıklandığında seçim durumunu değiştirme
+   - "Tümünü Seç" butonu güncellenerek tüm satırların seçili olarak işaretlenmesi
+   - "Tümünü Kaldır" butonu güncellenerek tüm seçimlerin kaldırılması
+
+3. Hidden bid/offer emirleri:
+   - Seçili hisselere hidden bid koymak için: bid + spread * 0.15 formülü uygulanmakta
+   - Seçili hisselere hidden offer koymak için: ask - spread * 0.15 formülü uygulanmakta
+
+4. Her pencerede artık:
+   - Birden fazla hisse senedi manuel olarak seçilebilir
+   - Seçilen hisselere toplu olarak işlem yapılabilir
+   - "Tümünü Seç" ve "Tümünü Kaldır" butonları ile hızlı seçim yapılabilir
+
+Bu değişiklikler sayesinde, daha önce tek bir hisse seçilebilirken, artık istediğiniz sayıda hisseyi aynı anda seçebilir ve işlem yapabilirsiniz.
+
+## Kullanım
+1. Hisselerin yanındaki kutucuklara tıklayarak hisseleri tek tek seçebilirsiniz
+2. "Tümünü Seç" butonu ile tüm hisseleri seçebilirsiniz
+3. "Tümünü Kaldır" butonu ile tüm seçimleri kaldırabilirsiniz
+4. Seçili hisseler için hidden bid/offer işlemleri yapabilirsiniz
+
+## Formüller
+- Hidden Bid: bid + (spread * 0.15)
+- Hidden Offer: ask - (spread * 0.15) 

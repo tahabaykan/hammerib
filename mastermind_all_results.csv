@@ -1,0 +1,521 @@
+Symbol,Group,Source
+BHFAM,8,historical_data.csv
+AIZN,1,historical_data.csv
+REGCO,11,historical_data.csv
+AFGD,5,historical_data.csv
+PEB PRF,5,historical_data.csv
+SOJE,9,historical_data.csv
+SF PRC,1,historical_data.csv
+RNR PRF,2,historical_data.csv
+AEFC,9,historical_data.csv
+AGM PRG,1,historical_data.csv
+SCHW PRJ,9,historical_data.csv
+MET PRF,9,historical_data.csv
+UZF,8,historical_data.csv
+AFGB,5,historical_data.csv
+AHH PRA,5,historical_data.csv
+PSA PRM,2,historical_data.csv
+ALL PRH,9,historical_data.csv
+BAC PRK,4,historical_data.csv
+SYF PRA,8,historical_data.csv
+DLR PRL,2,historical_data.csv
+PSA PRK,2,historical_data.csv
+CNO PRA,3,historical_data.csv
+ASB PRF,1,historical_data.csv
+CMS PRC,9,historical_data.csv
+PSA PRF,2,historical_data.csv
+GGN PRB,7,historical_data.csv
+GUT PRC,0,historical_data.csv
+RNR PRG,9,historical_data.csv
+TRTN PRE,3,historical_data.csv
+USB PRQ,10,historical_data.csv
+PRS,4,historical_data.csv
+FCNCO,1,historical_data.csv
+JPM PRK,9,historical_data.csv
+ATH PRD,8,historical_data.csv
+CFG PRE,8,historical_data.csv
+ACGLN,9,historical_data.csv
+ACGLO,9,historical_data.csv
+JPM PRC,4,historical_data.csv
+WBS PRF,8,historical_data.csv
+CMSD,4,historical_data.csv
+NYMTZ,11,historical_data.csv
+PFH,9,historical_data.csv
+JSM,1,historical_data.csv
+BAC PRQ,2,historical_data.csv
+T PRC,9,historical_data.csv
+PSA PRI,2,historical_data.csv
+BAC PRS,2,historical_data.csv
+AFGC,2,historical_data.csv
+ACP PRA,11,historical_data.csv
+FRT PRC,2,historical_data.csv
+RF PRE,10,historical_data.csv
+ECF PRA,0,historical_data.csv
+WFC PRC,2,historical_data.csv
+SREA,2,historical_data.csv
+WFC PRY,4,historical_data.csv
+F PRC,9,historical_data.csv
+TDS PRU,6,historical_data.csv
+TFC PRR,10,historical_data.csv
+WFC PRA,2,historical_data.csv
+VNO PRO,6,historical_data.csv
+DTB,10,historical_data.csv
+FBRT PRE,5,historical_data.csv
+BAC PRM,2,historical_data.csv
+SF PRB,1,historical_data.csv
+BAC PRP,2,historical_data.csv
+INN PRE,5,historical_data.csv
+TY PR,0,historical_data.csv
+TCBIO,8,historical_data.csv
+WFC PRD,9,historical_data.csv
+ALL PRI,10,historical_data.csv
+AGM PRD,5,historical_data.csv
+T PRA,9,historical_data.csv
+PRH,4,historical_data.csv
+MET PRE,4,historical_data.csv
+GAB PRG,7,historical_data.csv
+PEB PRG,5,historical_data.csv
+NCZ PRA,7,historical_data.csv
+KIM PRL,2,historical_data.csv
+COF PRJ,10,historical_data.csv
+HBANM,1,historical_data.csv
+EQH PRC,10,historical_data.csv
+REXR PRB,7,historical_data.csv
+BHFAL,1,historical_data.csv
+WRB PRF,2,historical_data.csv
+KREF PRA,5,historical_data.csv
+PSA PRP,2,historical_data.csv
+ETI PR,7,historical_data.csv
+GRBK PRA,0,historical_data.csv
+PSA PRG,2,historical_data.csv
+EFSCP,11,historical_data.csv
+CIM PRA,5,historical_data.csv
+TBB,4,historical_data.csv
+NEE PRN,4,historical_data.csv
+COF PRI,10,historical_data.csv
+HBANP,8,historical_data.csv
+BAC PRN,2,historical_data.csv
+SHO PRH,5,historical_data.csv
+PSA PRR,2,historical_data.csv
+MS PRO,2,historical_data.csv
+CMSC,4,historical_data.csv
+INN PRF,3,historical_data.csv
+HWCPZ,5,historical_data.csv
+CMSA,4,historical_data.csv
+KEY PRJ,8,historical_data.csv
+ELC,9,historical_data.csv
+PEB PRE,11,historical_data.csv
+JPM PRM,9,historical_data.csv
+AMH PRG,7,historical_data.csv
+JPM PRL,9,historical_data.csv
+PSA PRS,2,historical_data.csv
+KEY PRK,8,historical_data.csv
+BOH PRA,8,historical_data.csv
+DLR PRJ,2,historical_data.csv
+MFA PRB,5,historical_data.csv
+NSA PRA,5,historical_data.csv
+SOJC,2,historical_data.csv
+ASB PRE,1,historical_data.csv
+DUK PRA,4,historical_data.csv
+USB PRR,9,historical_data.csv
+SCHW PRD,4,historical_data.csv
+VNO PRN,6,historical_data.csv
+COF PRL,10,historical_data.csv
+USB PRS,9,historical_data.csv
+BHFAP,8,historical_data.csv
+USB PRP,2,historical_data.csv
+EQH PRA,9,historical_data.csv
+FITBP,4,historical_data.csv
+GAB PRH,7,historical_data.csv
+AXS PRE,9,historical_data.csv
+ENO,4,historical_data.csv
+SHO PRI,5,historical_data.csv
+OPP PRA,7,historical_data.csv
+FCNCP,1,historical_data.csv
+UZE,6,historical_data.csv
+WFC PRZ,9,historical_data.csv
+NTRSO,9,historical_data.csv
+VNO PRM,6,historical_data.csv
+PSA PRQ,2,historical_data.csv
+BFS PRD,11,historical_data.csv
+DTG,9,historical_data.csv
+WAFDP,8,historical_data.csv
+CIO PRA,3,historical_data.csv
+OPP PRB,7,historical_data.csv
+GGT PRG,0,historical_data.csv
+BAC PRO,2,historical_data.csv
+OZKAP,8,historical_data.csv
+PSEC PRA,3,historical_data.csv
+WRB PRG,2,historical_data.csv
+TRTX PRC,11,historical_data.csv
+PSA PRO,2,historical_data.csv
+VNO PRL,6,historical_data.csv
+PSA PRL,2,historical_data.csv
+AFGE,2,historical_data.csv
+MGR,2,historical_data.csv
+GGT PRE,0,historical_data.csv
+DCOMP,3,historical_data.csv
+FULTP,1,historical_data.csv
+GPJA,2,historical_data.csv
+AGM PRF,3,historical_data.csv
+SLG PRI,1,historical_data.csv
+JPM PRD,4,historical_data.csv
+CFR PRB,1,historical_data.csv
+UZD,8,historical_data.csv
+PSA PRN,2,historical_data.csv
+REXR PRC,7,historical_data.csv
+BCV PRA,0,historical_data.csv
+WRB PRH,10,historical_data.csv
+GDV PRH,7,historical_data.csv
+AGM PRE,11,historical_data.csv
+FITBO,10,historical_data.csv
+ENJ,11,historical_data.csv
+REGCP,7,historical_data.csv
+MS PRK,4,historical_data.csv
+COF PRK,10,historical_data.csv
+ADC PRA,5,historical_data.csv
+PEB PRH,5,historical_data.csv
+KIM PRM,2,historical_data.csv
+MS PRL,2,historical_data.csv
+GDV PRK,4,historical_data.csv
+DLR PRK,2,historical_data.csv
+PSA PRJ,2,historical_data.csv
+WRB PRE,2,historical_data.csv
+CLDT PRA,11,historical_data.csv
+F PRB,9,historical_data.csv
+DTW,2,historical_data.csv
+NRUC,4,historical_data.csv
+FHN PRF,6,historical_data.csv
+BHFAO,1,historical_data.csv
+BFS PRE,3,historical_data.csv
+SCE PRG,1,historical_data.csv
+BAC PRB,4,historical_data.csv
+SR PRA,4,historical_data.csv
+JPM PRJ,9,historical_data.csv
+SF PRD,10,historical_data.csv
+SCE PRL,2,historical_data.csv
+CUBB,11,historical_data.csv
+BWBBP,11,historical_data.csv
+EMP,9,historical_data.csv
+NCV PRA,7,historical_data.csv
+GAB PRK,7,historical_data.csv
+AMH PRH,7,historical_data.csv
+TDS PRV,6,historical_data.csv
+BHFAN,8,historical_data.csv
+SOJD,9,historical_data.csv
+MBINN,8,historical_data.csv
+SIGIP,1,historical_data.csv
+TRTN PRD,5,historical_data.csv
+DUKB,4,historical_data.csv
+ATH PRB,10,historical_data.csv
+COF PRN,10,historical_data.csv
+GNT PRA,7,historical_data.csv
+MGRB,10,historical_data.csv
+PSA PRH,4,historical_data.csv
+HIG PRG,4,historical_data.csv
+CADE PRA,1,historical_data.csv
+MGRD,10,historical_data.csv
+TFC PRO,9,historical_data.csv
+HFRO PRA,7,historical_data.csv
+UNMA,4,historical_data.csv
+STT PRG,4,historical_data.csv
+RJF PRB,1,extlthistorical.csv
+VLYPO,6,extlthistorical.csv
+KEY PRL,3,extlthistorical.csv
+HOVNP,8,extlthistorical.csv
+NYMTI,8,extlthistorical.csv
+CRBD,7,extlthistorical.csv
+EFC PRA,2,extlthistorical.csv
+MITN,8,extlthistorical.csv
+CNOBP,6,extlthistorical.csv
+GNL PRB,2,extlthistorical.csv
+SB PRD,1,extlthistorical.csv
+GAINN,9,extlthistorical.csv
+GAINI,8,extlthistorical.csv
+ATCO PRH,9,extlthistorical.csv
+ATH PRC,6,extlthistorical.csv
+ABR PRF,2,extlthistorical.csv
+QVCC,10,extlthistorical.csv
+GAINZ,8,extlthistorical.csv
+AGNCN,9,extlthistorical.csv
+DX PRC,5,extlthistorical.csv
+ABR PRE,2,extlthistorical.csv
+OXSQG,1,extlthistorical.csv
+AHL PRF,2,extlthistorical.csv
+TRTN PRC,5,extlthistorical.csv
+EFC PRB,9,extlthistorical.csv
+MET PRA,5,extlthistorical.csv
+GNL PRA,3,extlthistorical.csv
+RWTO,8,extlthistorical.csv
+SYF PRB,5,extlthistorical.csv
+MS PRA,5,extlthistorical.csv
+MS PRQ,0,extlthistorical.csv
+LBRDP,9,extlthistorical.csv
+RITM PRC,2,extlthistorical.csv
+TRINI,8,extlthistorical.csv
+EIIA,8,extlthistorical.csv
+SACH PRA,9,extlthistorical.csv
+WHFCL,1,extlthistorical.csv
+EICC,1,extlthistorical.csv
+RZB,5,extlthistorical.csv
+OXLCG,8,extlthistorical.csv
+SPMA,7,extlthistorical.csv
+USB PRH,5,extlthistorical.csv
+ECCW,8,extlthistorical.csv
+NYMTM,2,extlthistorical.csv
+DBRG PRI,2,extlthistorical.csv
+RITM PRD,2,extlthistorical.csv
+TRTN PRF,7,extlthistorical.csv
+JXN PRA,6,extlthistorical.csv
+BML PRL,5,extlthistorical.csv
+DSX PRB,1,extlthistorical.csv
+PRIF PRL,1,extlthistorical.csv
+DRH PRA,8,extlthistorical.csv
+NEWTG,8,extlthistorical.csv
+MITP,9,extlthistorical.csv
+GSL PRB,8,extlthistorical.csv
+VOYA PRB,5,extlthistorical.csv
+WBS PRG,6,extlthistorical.csv
+CHSCL,9,extlthistorical.csv
+MFICL,1,extlthistorical.csv
+FGN,0,extlthistorical.csv
+TWO PRB,2,extlthistorical.csv
+SCCC,8,extlthistorical.csv
+RZC,0,extlthistorical.csv
+MS PRF,0,extlthistorical.csv
+MGRE,0,extlthistorical.csv
+ESGRO,5,extlthistorical.csv
+PDPA,7,extlthistorical.csv
+PRIF PRI,1,extlthistorical.csv
+OXLCZ,8,extlthistorical.csv
+PNFPP,6,extlthistorical.csv
+AGNCP,2,extlthistorical.csv
+CHSCN,9,extlthistorical.csv
+HROWM,1,extlthistorical.csv
+SEAL PRB,9,extlthistorical.csv
+TFINP,9,extlthistorical.csv
+DDT,9,extlthistorical.csv
+ECCV,8,extlthistorical.csv
+GLADZ,1,extlthistorical.csv
+PMTV,0,extlthistorical.csv
+NLY PRI,2,extlthistorical.csv
+CGBDL,1,extlthistorical.csv
+WTFCP,6,extlthistorical.csv
+SCE PRM,0,extlthistorical.csv
+ACR PRD,2,extlthistorical.csv
+CMRE PRD,1,extlthistorical.csv
+MFA PRC,2,extlthistorical.csv
+SB PRC,1,extlthistorical.csv
+KMPB,5,extlthistorical.csv
+CHSCM,9,extlthistorical.csv
+CIM PRD,2,extlthistorical.csv
+NMFCZ,9,extlthistorical.csv
+MFAN,9,extlthistorical.csv
+PRIF PRD,1,extlthistorical.csv
+SCE PRK,5,extlthistorical.csv
+RIV PRA,9,extlthistorical.csv
+CIM PRC,2,extlthistorical.csv
+UCB PRI,6,extlthistorical.csv
+BC PRA,5,extlthistorical.csv
+CODI PRC,9,extlthistorical.csv
+NEWTI,1,extlthistorical.csv
+BML PRH,5,extlthistorical.csv
+OXLCN,1,extlthistorical.csv
+PBI PRB,3,extlthistorical.csv
+MS PRP,0,extlthistorical.csv
+OXLCI,8,extlthistorical.csv
+EFC PRC,8,extlthistorical.csv
+PMTU,8,extlthistorical.csv
+GNL PRE,2,extlthistorical.csv
+MFAO,8,extlthistorical.csv
+MHLA,9,extlthistorical.csv
+PMT PRA,2,extlthistorical.csv
+ECCU,9,extlthistorical.csv
+PMT PRB,2,extlthistorical.csv
+FGSN,0,extlthistorical.csv
+CHMI PRB,8,extlthistorical.csv
+METCZ,7,extlthistorical.csv
+ATH PRA,3,extlthistorical.csv
+RWAYZ,1,extlthistorical.csv
+SNV PRE,6,extlthistorical.csv
+RCB,8,extlthistorical.csv
+TWO PRC,2,extlthistorical.csv
+C PRN,9,extlthistorical.csv
+WCC PRA,9,extlthistorical.csv
+WTFCM,6,extlthistorical.csv
+RITM PRB,2,extlthistorical.csv
+SCCF,8,extlthistorical.csv
+SSSSL,1,extlthistorical.csv
+NLY PRF,9,extlthistorical.csv
+MTB PRH,5,extlthistorical.csv
+RCD,8,extlthistorical.csv
+ATH PRE,6,extlthistorical.csv
+ONBPO,9,extlthistorical.csv
+SWKHL,1,extlthistorical.csv
+WSBCP,6,extlthistorical.csv
+HBANL,3,extlthistorical.csv
+GS PRD,5,extlthistorical.csv
+CIMN,9,extlthistorical.csv
+XFLT PRA,1,extlthistorical.csv
+ECC PRD,8,extlthistorical.csv
+MS PRI,0,extlthistorical.csv
+FRMEP,1,extlthistorical.csv
+SOJF,0,extlthistorical.csv
+UMH PRD,9,extlthistorical.csv
+KEY PRI,3,extlthistorical.csv
+TFC PRI,3,extlthistorical.csv
+RPT PRC,7,extlthistorical.csv
+MBINM,6,extlthistorical.csv
+MBINL,2,extlthistorical.csv
+HCXY,8,extlthistorical.csv
+GECCO,1,extlthistorical.csv
+CUBI PRE,7,extlthistorical.csv
+ANG PRD,3,extlthistorical.csv
+FHN PRB,7,extlthistorical.csv
+FHN PRC,7,extlthistorical.csv
+OXLCP,8,extlthistorical.csv
+ONBPP,9,extlthistorical.csv
+BAC PRE,5,extlthistorical.csv
+DBRG PRJ,2,extlthistorical.csv
+ANG PRB,5,extlthistorical.csv
+FITBI,6,extlthistorical.csv
+TRTN PRB,9,extlthistorical.csv
+PRIF PRK,8,extlthistorical.csv
+METCL,1,extlthistorical.csv
+AGNCL,5,extlthistorical.csv
+WAL PRA,11,extlthistorical.csv
+CSWCZ,1,extlthistorical.csv
+TVC,0,extlthistorical.csv
+MITT PRB,2,extlthistorical.csv
+SEAL PRA,9,extlthistorical.csv
+NLY PRG,5,extlthistorical.csv
+MTB PRJ,0,extlthistorical.csv
+SPNT PRB,9,extlthistorical.csv
+DCOMG,1,extlthistorical.csv
+ATLCL,9,extlthistorical.csv
+F PRD,5,extlthistorical.csv
+MBNKP,1,extlthistorical.csv
+GECCI,1,extlthistorical.csv
+GNL PRD,2,extlthistorical.csv
+RWTP,8,extlthistorical.csv
+OXSQZ,1,extlthistorical.csv
+OXLCL,8,extlthistorical.csv
+RF PRF,0,extlthistorical.csv
+IVR PRC,3,extlthistorical.csv
+GS PRA,5,extlthistorical.csv
+TRTN PRA,8,extlthistorical.csv
+RITM PRA,2,extlthistorical.csv
+AUB PRA,6,extlthistorical.csv
+NREF PRA,9,extlthistorical.csv
+CHSCO,0,extlthistorical.csv
+MS PRE,0,extlthistorical.csv
+ALL PRB,9,extlthistorical.csv
+SCE PRJ,5,extlthistorical.csv
+ATHS,0,extlthistorical.csv
+EICB,1,extlthistorical.csv
+HTFB,1,extlthistorical.csv
+RWT PRA,9,extlthistorical.csv
+ALTG PRA,1,extlthistorical.csv
+ARGD,5,extlthistorical.csv
+LNC PRD,5,extlthistorical.csv
+ARR PRC,2,extlthistorical.csv
+GMRE PRA,1,extlthistorical.csv
+SAT,8,extlthistorical.csv
+ATLCP,2,extlthistorical.csv
+TFSA,1,extlthistorical.csv
+CHMI PRA,2,extlthistorical.csv
+RWAYL,8,extlthistorical.csv
+NEWTZ,1,extlthistorical.csv
+CCIA,1,extlthistorical.csv
+BML PRG,5,extlthistorical.csv
+ECCF,1,extlthistorical.csv
+AOMN,9,extlthistorical.csv
+SAJ,1,extlthistorical.csv
+SAY,1,extlthistorical.csv
+ALL PRJ,0,extlthistorical.csv
+GS PRC,5,extlthistorical.csv
+MER PRK,0,extlthistorical.csv
+NEWTH,8,extlthistorical.csv
+PRIF PRF,1,extlthistorical.csv
+SCCG,8,extlthistorical.csv
+FHN PRE,6,extlthistorical.csv
+RF PRC,3,extlthistorical.csv
+OCFCP,7,extlthistorical.csv
+CIMO,8,extlthistorical.csv
+ASBA,3,extlthistorical.csv
+CIM PRB,2,extlthistorical.csv
+TWO PRA,2,extlthistorical.csv
+ARGO PRA,2,extlthistorical.csv
+HPP PRC,3,extlthistorical.csv
+FLG PRA,3,extlthistorical.csv
+MHNC,9,extlthistorical.csv
+ABLLL,1,extlthistorical.csv
+HROWL,1,extlthistorical.csv
+CICB,4,extlthistorical.csv
+ACR PRC,2,extlthistorical.csv
+CFG PRH,0,extlthistorical.csv
+INBKZ,8,extlthistorical.csv
+MITT PRC,2,extlthistorical.csv
+MSBIP,7,extlthistorical.csv
+QVCD,10,extlthistorical.csv
+AGNCO,2,extlthistorical.csv
+BPOPM,1,extlthistorical.csv
+APOS,0,extlthistorical.csv
+OCCIN,1,extlthistorical.csv
+NYMTL,2,extlthistorical.csv
+GAM PRB,8,extlthistorical.csv
+ECCX,8,extlthistorical.csv
+EFC PRD,1,extlthistorical.csv
+TVE,0,extlthistorical.csv
+GECCZ,1,extlthistorical.csv
+PRIF PRJ,1,extlthistorical.csv
+CUBI PRF,7,extlthistorical.csv
+GECCH,1,extlthistorical.csv
+HNNAZ,1,extlthistorical.csv
+CMRE PRC,1,extlthistorical.csv
+BANFP,1,extlthistorical.csv
+SAZ,1,extlthistorical.csv
+BOH PRB,0,extlthistorical.csv
+TPGXL,0,extlthistorical.csv
+BK PRK,0,extlthistorical.csv
+AGNCM,2,extlthistorical.csv
+VLYPN,0,extlthistorical.csv
+FCRX,1,extlthistorical.csv
+BML PRJ,5,extlthistorical.csv
+SCCD,1,extlthistorical.csv
+SNV PRD,6,extlthistorical.csv
+BANC PRF,5,extlthistorical.csv
+NYMTN,2,extlthistorical.csv
+GPMT PRA,5,extlthistorical.csv
+CODI PRA,9,extlthistorical.csv
+OXLCO,8,extlthistorical.csv
+CODI PRB,9,extlthistorical.csv
+ATLCZ,9,extlthistorical.csv
+RC PRE,2,extlthistorical.csv
+RWTN,8,extlthistorical.csv
+VLYPP,3,extlthistorical.csv
+RLJ PRA,9,extlthistorical.csv
+SCE PRN,9,extlthistorical.csv
+GAINL,1,extlthistorical.csv
+OFSSH,1,extlthistorical.csv
+CMRE PRB,8,extlthistorical.csv
+RCC,1,extlthistorical.csv
+XOMAO,8,extlthistorical.csv
+AQNB,9,extlthistorical.csv
+MITT PRA,2,extlthistorical.csv
+NYMTG,5,extlthistorical.csv
+ABR PRD,2,extlthistorical.csv
+ESGRP,5,extlthistorical.csv
+OCCIM,1,extlthistorical.csv
+ET PRI,9,extlthistorical.csv
+OCCIO,1,extlthistorical.csv
+SCCE,8,extlthistorical.csv
+ATCO PRD,9,extlthistorical.csv
+HTFC,1,extlthistorical.csv
+XOMAP,1,extlthistorical.csv
+BC PRC,5,extlthistorical.csv
+PMT PRC,2,extlthistorical.csv
+EICA,8,extlthistorical.csv
+DBRG PRH,2,extlthistorical.csv
+ATCOL,1,extlthistorical.csv
+ECCC,8,extlthistorical.csv
