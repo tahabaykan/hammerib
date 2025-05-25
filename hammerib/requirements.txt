@@ -1,0 +1,9 @@
+# Project dependencies will be listed here
+# Example:
+# websockets>=10.0
+# ibapi>=9.81.1
+requests>=2.20.0
+PyJWT>=2.0.0
+cryptography>=3.0
+websockets>=10.0 # For Alaric WebSocket client
+# ibapi>=9.81.1 # For Interactive Brokers API, uncomment when needed 
