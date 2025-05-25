@@ -1,106 +1,59 @@
-# StockTracker
+# HammerIB Trading Application
 
-StockTracker is a modularized application for tracking stock market data, with a specific focus on preferred stocks.
+This application integrates Alaric (Hammer) API for order execution and Interactive Brokers (IB) API for market data and strategy conditioning.
 
-## Project Structure
+## How to Run
 
-The application has been modularized to improve maintainability and readability:
+1. Open a terminal and navigate to the project root directory:
+   ```
+   cd C:/Users/User/OneDrive/Masaüstü/Proje/StockTracker
+   ```
+2. Run the application using:
+   ```
+   python -m hammerib.main
+   ```
+   This ensures all imports work correctly and the modular structure is respected.
 
-```
-StockTracker/
-├── stock_tracker.py          # Main application entry point
-├── preferred_stock_tracker.original.bak.py  # Original non-modular version (backup)
-├── tb_modules/               # Modularized components with 'tb' prefix
-│   ├── __init__.py           # Package initialization
-│   ├── tb_utils.py           # General utility functions
-│   ├── tb_data_cache.py      # Market data caching functionality
-│   ├── tb_compression.py     # Data compression utilities
-│   ├── tb_spreadci_window.py # SpreadciDataWindow implementation
-│   ├── tb_contracts.py       # Interactive Brokers contract creation
-│   ├── tb_ui_utils.py        # UI-related utility functions
-│   ├── tb_orders.py          # Order management functionality
-│   ├── tb_ui_components.py   # UI components and display functions
-│   ├── tb_ib_connection.py   # Interactive Brokers connection handling
-│   └── tb_data_management.py # Data management and operations
-└── README.md                 # This documentation file
-```
+## Project Structure & Modular Design
 
-## Modules
+- **hammerib/main.py**: Main entry point. Starts the GUI (`MainWindow`).
+- **hammerib/gui/**: All GUI (Tkinter) code and windows.
+  - `main_window.py`: Main application window, tab logic, and top-level controls.
+  - `etf_panel.py`: Compact, always-live ETF panel (used in all windows).
+  - `maltopla_window.py`: Event-driven, cache-enabled analysis windows (Opt50/Extlt35/top movers).
+  - `opt_buttons.py`, `pos_orders_buttons.py`, `top_movers_buttons.py`: Modular button creators for top bar.
+  - `benchmark_panel.py`, `hidden_buttons.py`: Other reusable GUI widgets.
+- **hammerib/ib_api/**: Interactive Brokers API integration.
+  - `manager.py`: Handles IBKR connection, live data subscriptions, ETF/ticker management, and caching.
+- **hammerib/alaric_api/**: Alaric/Hammer WebSocket API integration (for order execution, not market data).
+- **hammerib/data/**: Data helpers, CSV reading, etc.
+- **hammerib/strategies/**: (If used) Trading strategies and logic.
+- **hammerib/config/**: Configuration files and settings.
+- **hammerib/utils/**: Utility functions.
 
-### tb_utils.py
-Contains generic utility functions like:
-- `safe_format_float` - Safely format float values
-- `safe_float` - Convert values to float safely
-- `safe_int` - Convert values to int safely
-- `normalize_ticker_column` - Normalize ticker symbols in DataFrames
+## Key Features
 
-### tb_data_cache.py
-Implements the `MarketDataCache` class for caching market data and managing API subscriptions.
+- **Event-driven, modular GUI**: Each window/tab is independent and subscribes only to the tickers it needs.
+- **Live data & snapshot cache**: Only 20 tickers at a time are live-subscribed; all others are cached for fast analysis.
+- **ETF panel**: Always visible, compact, and live-updating in every window.
+- **Pagination**: All tables show max 20 tickers per page, with navigation.
+- **Batch analysis**: "Döngü Başlat" button cycles through all pages to keep cache fresh for all tickers.
+- **Multi-select & action buttons**: Checkboxes for manual or bulk selection, with 4 action buttons for future order logic.
+- **Positions/Orders**: Placeholder windows for future WebSocket-based integration.
+- **Top movers**: T/C-prefs for biggest gainers/losers, with all the above features.
 
-### tb_compression.py
-Handles data compression and decompression for efficient data storage and transmission:
-- `compress_market_data` - Serializes, compresses, and encodes data
-- `decompress_market_data` - Decodes, decompresses, and deserializes data
+## For New Developers/Assistants
 
-### tb_spreadci_window.py
-Contains the `SpreadciDataWindow` class, a window for displaying and managing spreadci data.
+- **Start from `main.py`**. All main logic is in `hammerib/gui/main_window.py`.
+- Each module is responsible for a single concern (GUI, IBKR, Alaric, etc.).
+- To add a new feature, create a new file in the relevant module and import it where needed.
+- All windows and panels are designed to be reusable and composable.
+- For live data, only subscribe to what is visible; use the cache for everything else.
+- For order execution, see `hammerib/alaric_api/` (not yet fully integrated).
 
-### tb_contracts.py
-Functions for creating Interactive Brokers contracts:
-- `create_preferred_stock_contract` - Creates contracts for preferred stocks
-- `create_common_stock_contract` - Creates contracts for common stocks
+---
 
-### tb_ui_utils.py
-UI-related utility functions:
-- `create_simple_treeview` - Creates a standardized Treeview widget
-- `safe_reset_tags` - Safely resets tags on Treeview items
-
-### tb_orders.py
-Order management functionality:
-- `create_limit_order` - Creates IB limit orders
-- `create_market_order` - Creates IB market orders
-- `format_order_row` - Formats order data for display
-- `calculate_order_value` - Calculates total order value
-
-### tb_ui_components.py
-UI components and display functions:
-- Status bar creation and updates
-- Benchmark frame and label updates
-- Filter frames
-- Tab controls
-- Page navigation controls
-- Message popups
-
-### tb_ib_connection.py
-Interactive Brokers connection handling:
-- `connect_to_ibkr` - Establishes connection to Interactive Brokers
-- `disconnect_from_ibkr` - Disconnects from Interactive Brokers
-- `subscribe_to_market_data` - Subscribes to market data for a contract
-- `cancel_market_data_subscription` - Cancels market data subscription
-- API call queue processing
-- Ticker data parsing
-
-### tb_data_management.py
-Data management and operations:
-- `get_filtered_stocks` - Filters stocks based on tab and text
-- `sort_dataframe` - Sorts DataFrames by column
-- `get_paginated_data` - Gets specific pages from DataFrames
-- Treeview population and update functions
-- Color tag application
-- Top movers identification
-
-## Running the Application
-
-To run the application:
-
-```bash
-python stock_tracker.py
-```
-
-## Further Modularization
-
-The application has been successfully modularized with a step-by-step approach. The next steps would be:
-- Implementing the remaining UI functionality in each stub method
-- Creating dedicated modules for portfolio/position-specific functionality
-- Adding comprehensive documentation to each module
-- Developing unit tests for each module 
+**If you are a new developer or AI assistant:**
+- Attach or review the `hammerib/` folder and this README.
+- Use `python -m hammerib.main` to run.
+- All code is modular and extendable; follow the structure for new features. 

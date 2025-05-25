@@ -1,0 +1,28 @@
+{
+    "hammer_api": {
+        "api_key": "your_api_key_here",
+        "api_secret": "your_api_secret_here",
+        "base_url": "wss://tapi.alaricsecurities.net/trading",
+        "account": "APITEST"
+    },
+    "ibkr": {
+        "host": "127.0.0.1",
+        "port": 7497,
+        "client_id": 1
+    },
+    "strategies": [
+        {
+            "name": "basic_strategy",
+            "symbols": ["AAPL", "MSFT", "GOOGL"],
+            "parameters": {
+                "max_position_size": 100,
+                "stop_loss_percent": 2.0,
+                "take_profit_percent": 4.0
+            }
+        }
+    ],
+    "logging": {
+        "level": "INFO",
+        "file": "trading_system.log"
+    }
+} 
